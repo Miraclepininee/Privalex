@@ -1,11 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
     <title>Privalex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon.png" />
+
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <nav class="nav">
+            <img class="logo" src="assets/images/logo.png" alt="Bankist logo" class="nav__logo" id="logo" />
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--1">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--2">Services</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">Resources</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">Blogs</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="hero-container" role="banner">
+                        <img src="assets/images/slide1.png" class="hero-background" alt="Hero background image"
+                            loading="lazy" />
+                        <div class="content-wrapper">
+                            <h1 class="hero-title">Achieving compliance through outscourced data protection</h1>
+                            <button class="more-button" tabindex="0">Learn about us</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="hero-container" role="banner">
+                        <img src="assets/images/slide1.png" class="hero-background" alt="Hero background image"
+                            loading="lazy" />
+                        <div class="content-wrapper">
+                            <h1 class="hero-title">Achieving compliance through outscourced data protection</h1>
+                            <button class="more-button" tabindex="0">Learn about us</button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="swiper-slide">
+                    <section class="hero-container" role="banner">
+                        <img src="assets/images/slide1.png" class="hero-background" alt="Hero background image"
+                            loading="lazy" />
+                        <div class="content-wrapper">
+                            <h1 class="hero-title">Achieving compliance through outscourced data protection</h1>
+                            <button class="more-button" tabindex="0">Learn about us</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="hero-container" role="banner">
+                        <img src="assets/images/slide1.png" class="hero-background" alt="Hero background image"
+                            loading="lazy" />
+                        <div class="content-wrapper">
+                            <h1 class="hero-title">Achieving compliance through outscourced data protection</h1>
+                            <button class="more-button" tabindex="0">Learn about us</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 20,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="services-container">
+        <div class="services-content">
+            <header class="services-header">
+                <h2 class="services-title">Our services</h2>
+            </header>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-background" style="background-image: url(assets/images/Rectangle\ 7.png);">
+                    </div>
+                    <img src="assets/images/Group 2.png" alt="" class="service-icon">
+                    <h3 class="service-title">Outsourced DPO & Consultancy Services</h3>
+                    <p class="service-description">PrivaLex provides flexible and expert-driven data protection services
+                        tailored to meet the needs of organisations navigating complex privacy regulations such as GDPR
+                        and
+                        NDPA.</p><a href="#" class="read-more">Read more <span class="read-more-icon"
+                            style="background-image: url(assets/images/keyboard_arrow_up.png);"></span><span
+                            class="visually-hidden">about Outsourced DPO & Consultancy Services</span></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-background" style="background-image: url(assets/images/Rectangle\ 7.png);">
+                    </div>
+
+                    <img src="assets/images/Group 2.png" alt="" class="service-icon">
+                    <h3 class="service-title">Tech Policy Research & Advisory</h3>
+                    <p class="service-description">PrivaLex provides expert Tech Policy Research and Advisory services
+                        to
+                        help organisations navigate complex regulatory challenges across multiple jurisdictions. we
+                        offer
+                        strategic guidance on emerging technology regulations,
+                        ensuring your business stays compliant and competitive.</p><a href="#" class="read-more">Read
+                        more
+                        <span class="read-more-icon"
+                            style="background-image: url(assets/images/keyboard_arrow_up.png);"></span><span
+                            class="visually-hidden">about Tech Policy Research & Advisory</span></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-background" style="background-image: url(assets/images/Rectangle\ 7.png);">
+                    </div>
+
+                    <img src="assets/images/Group 2.png" alt="" class="service-icon">
+                    <h3 class="service-title">EU & UK Representative Services</h3>
+                    <p class="service-description">Ensure compliance with GDPR Article 27 through PrivaLex's EU & UK
+                        GDPR
+                        Representative Services. For organisations outside the EU/UK offering goods or services to
+                        residents, our expert team serves as your local representative, handling key compliance
+                        obligations.
+                    </p>
+                    <a href="#" class="read-more">Read more <span class="read-more-icon"
+                            style="background-image: url(assets/images/keyboard_arrow_up.png);"></span><span
+                            class="visually-hidden">about EU & UK Representative Services</span></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-background" style="background-image: url(assets/images/Rectangle\ 7.png);">
+                    </div>
+
+                    <img src="assets/images/Group 2.png" alt="" class="service-icon">
+                    <h3 class="service-title">Data Protection Academy</h3>
+                    <p class="service-description">Empower your team with the knowledge to navigate complex data privacy
+                        regulations through PrivaLex's Data Protection Academy. Designed for both organisations and
+                        individual practitioners, our academy offers tailored training programs to ensure compliance at
+                        all
+                        levels.</p>
+                    <a href="#" class="read-more">Read more <span class="read-more-icon"
+                            style="background-image: url(assets/images/keyboard_arrow_up.png);"></span><span
+                            class="visually-hidden">about Data Protection Academy</span></a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-background" style="background-image: url(assets/images/Rectangle\ 7.png);">
+                    </div>
+
+                    <img src="assets/images/Group 2.png" alt="" class="service-icon">
+                    <h3 class="service-title">Cyber Security Consultancy</h3>
+                    <p class="service-description">We offer penetration testing to identify vulnerabilities,
+                        vulnerability management to maintain system resilience,
+                        and expert implementation of security Frameworks such as,
+                        ISO/IEC 27001,
+                        UK Cyber Essentials etc.</p><a href="#" class="read-more">Read more <span class="read-more-icon"
+                            style="background-image: url(assets/images/keyboard_arrow_up.png);"></span><span
+                            class="visually-hidden">about Cyber Security Consultancy</span></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-background" style="background-image: url(assets/images/Rectangle\ 7.png);">
+                    </div>
+
+                    <img src="assets/images/Group 2.png" alt="" class="service-icon">
+                    <h3 class="service-title">AI Governance and Compliance</h3>
+                    <p class="service-description">Unlock the potential of Artificial Intelligence while staying
+                        compliant
+                        and ethical with PrivaLex's AI Governance and Compliance Services. As AI transforms business
+                        operations, ensuring your systems meet global regulatory and ethical standards is essential.</p>
+                    <a href="#" class="read-more">Read more <span class="read-more-icon"
+                            style="background-image: url(assets/images/keyboard_arrow_up.png);"></span><span
+                            class="visually-hidden">about AI Governance and Compliance</span></a>
+                </article>
+                <div class="background-blur6"></div>
+                <div class="background-blur1"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        :root {
+            --default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "Source Han Sans CN", sans-serif;
+        }
+
+    </style>
+
+    <section class="team-section">
+        <div class="team-content">
+            <header class="team-header">
+                <h2 class="team-title">Meet Our team</h2>
+                <p class="team-description">A dynamic group of industry experts, committed to delivering cutting-edge
+                    solutions in data protection, cybersecurity, and tech policy to drive your business forward</p>
+            </header>
+            <div class="team-grid">
+                <div class="team-row">
+                    <article class="team-info">
+                        <img src="assets/images/team1.png"
+                            alt="Team member" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">Confidence</h3>
+                            <p class="member-role">Tech policy & research lead</p>
+                        </div>
+                    </article>
+                    <article class="team-info">
+                        <img src="assets/images/team2.png"
+                            alt="Team member" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">Confidence</h3>
+                            <p class="member-role">Tech policy & research lead</p>
+                        </div>
+                    </article>
+                    <article class="team-info">
+                        <img src="assets/images/team3.png"
+                            alt="Team member" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">Confidence</h3>
+                            <p class="member-role">Tech policy & research lead</p>
+                        </div>
+                    </article>
+                    <article class="team-info">
+                        <img src="assets/images/team4.png"
+                            alt="Team member" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">Confidence</h3>
+                            <p class="member-role">Tech policy & research lead</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="team-row">
+                    <article class="team-info">
+                        <img src="assets/images/tem5.png"
+                            alt="Team member" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">Confidence</h3>
+                            <p class="member-role">Tech policy & research lead</p>
+                        </div>
+                    </article>
+                    <article class="team-info">
+                        <img src="assets/images/team6.png"
+                            alt="Team member" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">Confidence</h3>
+                            <p class="member-role">Tech policy & research lead</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="background-blur-1"></div>
+        <div class="background-blur-2"></div>
+
+    </section>
+
+<section class="contact-container" aria-label="Contact Form Section">
+    <div class="header-wrapper">
+        <h1 class="main-heading">How you can reach us</h1>
+        <p class="subheading">Want to get through to us? kindly leave a mail or contact us using our official number</p>
+    </div>
+
+    <form class="contact-form" action="#" method="POST">
+        <div class="form-row">
+            <div class="input-group">
+                <label for="mail-title" class="input-label">Title</label>
+                <input type="text" id="mail-title" name="mail_title" class="form-input"
+                    placeholder="Enter mail title here" required aria-required="true">
+            </div>
+
+            <div class="input-group">
+                <label for="mail-subject" class="input-label">Subject</label>
+                <input type="text" id="mail-subject" name="mail_subject" class="form-input"
+                    placeholder="Enter mail subject here" required aria-required="true">
+            </div>
+        </div>
+
+        <div class="message-group">
+            <label for="message" class="input-label">Message</label>
+            <textarea id="message" name="message" class="message-input" placeholder="Enter message here" required
+                aria-required="true"></textarea>
+        </div>
+    </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer-container" role="contentinfo">
+        <section class="contact-sections">
+            <div class="contact-wrapper">
+                <h2 class="section-title">Contact us</h2>
+                <div class="contact-info">
+                    <div class="address-container">
+                        <div class="address-wrapper">
+                            <img loading="lazy"
+                                src=""
+                                class="location-icon" alt="Lagos office location icon" />
+                            <p class="address-text">
+                                <span class="highlighted-city">Lagos</span>: Block E, New Providence Garden, Opposite
+                                Russel
+                                International School, Lekki, Nigeria.
+                            </p>
+                        </div>
+                        <div class="address-wrapper">
+                            <img loading="lazy"
+                                src=""
+                                class="location-icon" alt="London office location icon" />
+                            <p class="address-text">
+                                <span class="highlighted-city">London</span>: Suite 5058 Unit 3A, 34-35 Hatton Garden,
+                                Holborn, EC1N 8DX, United Kingdom.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="phone-wrapper">
+                        <img loading="lazy"
+                            src=""
+                            class="phone-icon" alt="Phone icon" />
+                        <a href="tel:+443030401065" class="phone-number">+44 (0)3030401065</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="social-links" aria-label="Social media links">
+                <a href="#" class="social-link" aria-label="Visit our Facebook page">
+                    <img loading="lazy"
+                        src=""
+                        class="social-icon" alt="Facebook icon" />
+                </a>
+                <a href="#" class="social-link" aria-label="Visit our Twitter page">
+                    <img loading="lazy"
+                        src="assets/images/tem5.png"
+                        class="social-icon" alt="Twitter icon" />
+                </a>
+                <a href="#" class="social-link" aria-label="Visit our LinkedIn page">
+                    <img loading="lazy"
+                        src=""
+                        class="social-icon" alt="LinkedIn icon" />
+                </a>
+                <a href="#" class="social-link" aria-label="Visit our Instagram page">
+                    <img loading="lazy"
+                        src=""                     class="social-icon" alt="Instagram icon" />
+                </a>
+            </nav>
+        </section>
+
+        <section class="services-section">
+            <h2 class="section-title">Services</h2>
+            <nav aria-label="Services navigation">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Outsourced DPO & Consultancy Services</a></li>
+                    <li><a href="#" class="nav-link">EU & UK Representative Services</a></li>
+                    <li><a href="#" class="nav-link">Cyber Security Consultancy</a></li>
+                    <li><a href="#" class="nav-link">Tech Policy Research & Advisory</a></li>
+                    <li><a href="#" class="nav-link">Data Protection Academy</a></li>
+                    <li><a href="#" class="nav-link">AI Governance and Compliance</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="links-section">
+            <h2 class="section-title">Links</h2>
+            <nav aria-label="Quick links navigation">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">About us</a></li>
+                    <li><a href="#" class="nav-link">Resources</a></li>
+                    <li><a href="#" class="nav-link">Blogs</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="others-section">
+            <h2 class="section-title">Others</h2>
+            <nav aria-label="Legal links navigation">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Privacy notice</a></li>
+                    <li><a href="#" class="nav-link">Cookie notice</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer> 
 </body>
+
 </html>
