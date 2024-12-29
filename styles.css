@@ -689,7 +689,7 @@ body {
     position: relative;
     padding: 12px 35px;
     background: rgba(56, 188, 196, 1);
-    ;
+
     font-size: 14px;
     font-weight: 600;
     color: #181818;
@@ -767,13 +767,13 @@ body {
     transition: all 0.8s ease;
 }
 
-submit-button:hover {
+.submit-button:hover {
     background: transparent;
     color: #fec195;
     box-shadow: 0 0 25px #fec1958c;
 }
 
-submit-button:hover .star-1 {
+.submit-button:hover .star-1 {
     position: absolute;
     top: -80%;
     left: -30%;
@@ -783,7 +783,7 @@ submit-button:hover .star-1 {
     z-index: 2;
 }
 
-submit-button:hover .star-2 {
+.submit-button:hover .star-2 {
     position: absolute;
     top: -25%;
     left: 10%;
@@ -793,7 +793,7 @@ submit-button:hover .star-2 {
     z-index: 2;
 }
 
-submit-button:hover .star-3 {
+.submit-button:hover .star-3 {
     position: absolute;
     top: 55%;
     left: 25%;
@@ -803,7 +803,7 @@ submit-button:hover .star-3 {
     z-index: 2;
 }
 
-submit-button:hover .star-4 {
+.submit-button:hover .star-4 {
     position: absolute;
     top: 30%;
     left: 80%;
@@ -813,7 +813,7 @@ submit-button:hover .star-4 {
     z-index: 2;
 }
 
-submit-button:hover .star-5 {
+.submit-button:hover .star-5 {
     position: absolute;
     top: 25%;
     left: 115%;
@@ -823,7 +823,7 @@ submit-button:hover .star-5 {
     z-index: 2;
 }
 
-submit-button:hover .star-6 {
+.submit-button:hover .star-6 {
     position: absolute;
     top: 5%;
     left: 60%;
@@ -1040,7 +1040,6 @@ submit-button:hover .star-6 {
         justify-content: space-between;
         background: none;
         backdrop-filter: none;
-        animation: updown;
     }
 
     .logo,
@@ -1235,19 +1234,6 @@ submit-button:hover .star-6 {
         justify-content: center;
     }
 
-    .main-container {
-        width: 80%;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .strategy-meets-compliance {
-        font-size: 32px;
-        line-height: 45px;
-        width: 99px;
-        left: 0;
-        display: none;
-    }
 
 }
 

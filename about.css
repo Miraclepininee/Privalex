@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +13,7 @@ body {
     background: #01203e;
     box-sizing: border-box;
 }
+
 .nav {
     top: 0.5rem;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 .main-container,
-.main-container  {
+.main-container {
     box-sizing: border-box;
 }
 
@@ -60,7 +60,6 @@ body {
     width: 100%;
     height: 67px;
     top: 85px;
-    /* left: calc(50% - 329.5px); */
     color: #ffffff;
     font-family: Helvetica Neue Medium Extended, var(--default-font-family);
     font-size: 48px;
@@ -72,9 +71,6 @@ body {
 
 
 .strategy-meets-compliance {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     width: 999px;
     height: 34px;
@@ -89,15 +85,20 @@ body {
     white-space: nowrap;
     z-index: 4;
 }
+
+/*  */
+
 .infor-wrapper {
     width: 90%;
     height: 94vh;
     padding-bottom: 8rem;
 }
+
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
 }
+
 .header-about {
     position: relative;
     top: 5rem;
@@ -116,7 +117,63 @@ body {
     height: 100%;
 }
 
-.header__left p{
+.header__left p {
     margin: 1rem;
-        color: #ffffff;
+    color: #ffffff;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .header-about {
+            height: 59vh;
+            margin-bottom: 4rem;
+        }
+    
+        .header__container {
+            gap: 0;
+            padding-bottom: 3rem;
+        }
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        height: 250px;
+    }
+
+    .about-privalex-advisory {
+        font-size: 24px;
+        top: 50px;
+    }
+
+    .strategy-meets-compliance {
+        width: 90%;
+        font-size: 16px;
+        top: 120px;
+        left: 1%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+        .container {
+                width: var(--container-width-sn);
+            }
+    .header-about {
+            height: 100vh;
+        }
+    
+        .header__container {
+            grid-template-columns: 1fr;
+            text-align: center;
+            margin-top: 0;
+        }
+    
+        .header__left p {
+            margin-bottom: 1.3rem;
+        }
+}
+
+@media (max-width: 480px) {}
