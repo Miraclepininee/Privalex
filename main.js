@@ -20,3 +20,14 @@ const closeNav = () => {
 }
 
 closeBtn.addEventListener('click', closeNav);
+
+//cookies 
+function checkCookies() {
+  let text = "";
+  if (navigator.cookieEnabled == true) {
+    text = "Cookies are enabled.";
+  } else {
+    text = "Cookies are not enabled.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
